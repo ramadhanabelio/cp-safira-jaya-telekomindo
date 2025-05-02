@@ -1,6 +1,12 @@
 <?php
 
+use App\Models\Contact;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\GalleryController;
+use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +20,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing-page');
 });
+
+Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::resource('products', ProductController::class);
+Route::resource('contacts', ContactController::class);
+Route::resource('galleries', GalleryController::class);
