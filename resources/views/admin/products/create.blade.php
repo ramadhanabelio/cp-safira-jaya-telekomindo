@@ -11,7 +11,7 @@
                 </h4>
                 <div class="row">
                     <div class="col-md-8">
-                        <form action="{{ route('products.store') }}" method="POST">
+                        <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="card">
                                 <div class="card-header">
@@ -48,6 +48,18 @@
                                         @error('price')
                                             <small class="text-danger">{{ $message }}</small>
                                         @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="image">Gambar Produk</label>
+                                        <input type="file" class="form-control" id="image" name="image">
+                                        @error('image')
+                                            <small class="text-danger">{{ $message }}</small>
+                                        @enderror
+                                        @if (isset($product) && $product->image)
+                                            <div class="mt-2">
+                                                <img src="{{ asset('storage/' . $product->image) }}" width="150">
+                                            </div>
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="card-action">

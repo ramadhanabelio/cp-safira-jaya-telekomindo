@@ -1,8 +1,8 @@
 <?php
 
-use App\Models\Contact;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\ProductController;
@@ -19,9 +19,11 @@ use App\Http\Controllers\Admin\DashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('landing-page');
-});
+Route::get('/', [LandingPageController::class, 'index'])->name('landing');
+Route::get('/product', [LandingPageController::class, 'product'])->name('product');
+Route::get('/product/{slug}', [LandingPageController::class, 'detail'])->name('product.detail');
+Route::get('/gallery', [LandingPageController::class, 'gallery'])->name('gallery');
+Route::post('/contact', [LandingPageController::class, 'contact'])->name('contact');
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
