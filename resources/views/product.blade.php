@@ -9,7 +9,7 @@
                 <p>Kumpulan Produk Terbaik Kami</p>
                 <nav class="breadcrumbs">
                     <ol>
-                        <li><a href="{{ route('landing') }}">Home</a></li>
+                        <li><a href="{{ route('landing') }}">Beranda</a></li>
                         <li class="current">Produk</li>
                     </ol>
                 </nav>
