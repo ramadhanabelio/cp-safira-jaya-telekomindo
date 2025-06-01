@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PT. Safira Jaya Telekomindo</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('user/img/logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/logo.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <style>
@@ -29,7 +29,7 @@
                 <div class="card shadow-lg border-0 rounded-4">
                     <div class="card-body p-4">
                         <div class="text-center mb-4">
-                            <img src="{{ asset('user/img/logo.png') }}" alt="Logo" style="width: 100px;">
+                            <img src="{{ asset('img/logo.png') }}" alt="Logo" style="width: 100px;">
                             <h5 class="mt-4 mb-0 fw-bold">Admin Panel</h5>
                         </div>
 

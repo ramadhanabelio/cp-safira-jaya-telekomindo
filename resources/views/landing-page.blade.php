@@ -3,8 +3,8 @@
 @section('content')
     <main class="main">
         <!-- Hero Section -->
-        <section id="hero" class="hero section dark-background">
-            <img src="{{ asset('user/img/hero-bg.jpg') }}" alt="" data-aos="fade-in" />
+        <section id="beranda" class="beranda section dark-background">
+            <img src="{{ asset('img/hero-bg.jpg') }}" alt="" data-aos="fade-in" />
 
             <div class="container d-flex flex-column align-items-center">
                 <h2 data-aos="fade-up" data-aos-delay="100">
@@ -14,18 +14,18 @@
                     Security System
                 </p>
                 <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-                    <a href="#about" class="btn-get-started">Get Started</a>
+                    <a href="#tentang" class="btn-get-started">Get Started</a>
                 </div>
             </div>
         </section>
         <!-- /Hero Section -->
 
         <!-- About Section -->
-        <section id="about" class="about section">
+        <section id="tentang" class="tentang section">
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <img src="{{ asset('user/img/about.jpg') }}" class="img-fluid rounded-4 mb-4" alt="" />
+                        <img src="{{ asset('img/about.jpg') }}" class="img-fluid rounded-4 mb-4" alt="" />
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
                         <div class="content ps-0 ps-lg-5">
@@ -51,7 +51,7 @@
         </section>
         <!-- /About Section -->
 
-        <!-- Portfolio Section -->
+        <!-- Product Section -->
         <section id="portfolio" class="portfolio section">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Produk</h2>
@@ -95,10 +95,10 @@
                 </div>
             </div>
         </section>
-        <!-- /Portfolio Section -->
+        <!-- /Product Section -->
 
         <!-- Contact Section -->
-        <section id="contact" class="contact section">
+        <section id="kontak" class="kontak section">
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Kontak</h2>

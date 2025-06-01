@@ -20,9 +20,9 @@ use App\Http\Controllers\Admin\DashboardController;
 */
 
 Route::get('/', [LandingPageController::class, 'index'])->name('landing');
-Route::get('/product', [LandingPageController::class, 'product'])->name('product');
-Route::get('/product/{slug}', [LandingPageController::class, 'detail'])->name('product.detail');
-Route::get('/gallery', [LandingPageController::class, 'gallery'])->name('gallery');
+Route::get('/produk', [LandingPageController::class, 'product'])->name('product');
+Route::get('/produk/{slug}', [LandingPageController::class, 'detail'])->name('product.detail');
+Route::get('/galeri', [LandingPageController::class, 'gallery'])->name('gallery');
 Route::post('/contact', [LandingPageController::class, 'contact'])->name('contact');
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');

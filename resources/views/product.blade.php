@@ -3,7 +3,7 @@
 @section('content')
     <main class="main">
         <div class="page-title dark-background" data-aos="fade"
-            style="background-image: url({{ asset('user/img/page-title-bg.jpg') }});">
+            style="background-image: url({{ asset('img/page-title-bg.jpg') }});">
             <div class="container position-relative">
                 <h1>Produk</h1>
                 <p>Kumpulan Produk Terbaik Kami</p>

@@ -8,8 +8,8 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!-- Favicons -->
-    <link href="{{ asset('user/img/favicon.png') }}" rel="icon" />
-    <link href="{{ asset('user/img/apple-touch-icon.png') }}" rel="apple-touch-icon" />
+    <link href="{{ asset('img/favicon.png') }}" rel="icon" />
+    <link href="{{ asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -19,20 +19,20 @@
         rel="stylesheet" />
 
     <!-- Vendor CSS Files -->
-    <link href="{{ asset('user/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('user/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet" />
-    <link href="{{ asset('user/vendor/aos/aos.css') }}" rel="stylesheet" />
-    <link href="{{ asset('user/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('user/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet" />
+    <link href="{{ asset('vendor/aos/aos.css') }}" rel="stylesheet" />
+    <link href="{{ asset('vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet" />
 
     <!-- Main CSS File -->
-    <link href="{{ asset('user/css/main.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet" />
 </head>
 
 <body class="index-page">
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
-            <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <a href="/" class="logo d-flex align-items-center me-auto">
                 <h1 class="sitename">Safira Jaya Telekomindo</h1>
             </a>
 
@@ -44,12 +44,12 @@
                     @endphp
 
                     <li>
-                        <a href="{{ $onLanding ? '#hero' : route('landing') . '#hero' }}"
-                            class="{{ $onLanding ? 'active' : '' }}">Home</a>
+                        <a href="{{ $onLanding ? '#beranda' : route('landing') . '#beranda' }}"
+                            class="{{ $onLanding ? 'active' : '' }}">Beranda</a>
                     </li>
                     <li>
-                        <a href="{{ $onLanding ? '#about' : route('landing') . '#about' }}"
-                            class="{{ $onLanding && request()->is('#about') ? 'active' : '' }}">Tentang</a>
+                        <a href="{{ $onLanding ? '#tentang' : route('landing') . '#tentang' }}"
+                            class="{{ $onLanding && request()->is('#tentang') ? 'active' : '' }}">Tentang</a>
                     </li>
                     <li>
                         <a href="{{ route('gallery') }}"
@@ -60,8 +60,8 @@
                             class="{{ $routeName === 'product' ? 'active' : '' }}">Produk</a>
                     </li>
                     <li>
-                        <a href="{{ $onLanding ? '#contact' : route('landing') . '#contact' }}"
-                            class="{{ $onLanding && request()->is('#contact') ? 'active' : '' }}">Kontak</a>
+                        <a href="{{ $onLanding ? '#kontak' : route('landing') . '#kontak' }}"
+                            class="{{ $onLanding && request()->is('#kontak') ? 'active' : '' }}">Kontak</a>
                     </li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -77,7 +77,7 @@
         <div class="container footer-top">
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 footer-about">
-                    <a href="index.html" class="logo d-flex align-items-center">
+                    <a href="/" class="logo d-flex align-items-center">
                         <span class="sitename">PT. Safira Jaya Telekomindo</span>
                     </a>
                     <div class="footer-contact pt-3">
@@ -131,17 +131,17 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="{{ asset('user/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('user/vendor/php-email-form/validate.js') }}"></script>
-    <script src="{{ asset('user/vendor/aos/aos.js') }}"></script>
-    <script src="{{ asset('user/vendor/glightbox/js/glightbox.min.js') }}"></script>
-    <script src="{{ asset('user/vendor/purecounter/purecounter_vanilla.js') }}"></script>
-    <script src="{{ asset('user/vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('user/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('user/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('vendor/php-email-form/validate.js') }}"></script>
+    <script src="{{ asset('vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
 
     <!-- Main JS File -->
-    <script src="{{ asset('user/js/main.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 </body>
 
 </html>
